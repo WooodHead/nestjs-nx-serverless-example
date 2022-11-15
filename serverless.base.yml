@@ -1,6 +1,6 @@
 provider:
   name: aws
-  profile: 'default'
+  profile: default
   runtime: nodejs14.x
 
 plugins:
@@ -11,8 +11,7 @@ custom:
   serverless-offline:
     reloadHandler: true
   bundle:
-    esbuild: true,
-    tsConfig: './tsconfig.app.json'
+    tsConfig: ./tsconfig.app.json
     ignorePackages:
       - 'cache-manager'
       - 'class-transformer'

@@ -18,3 +18,5 @@ Example integrated NX monorepo with two NestJS apps served locally and deployed 
 * The default `serve` target in `project.json` has been updated to use `serverless offline`.
 * A `deploy` target was added.
 * Several packages were ignored via `custom.bundle.ignorePackages` in `serverless.base.yml` for it to build successfully. This [thread](https://github.com/nestjs/nest/issues/1706) provides background.
+* Bundled size: ~500kb + ~750kb .map file
+* `custom.bundle.esbuild=true` in `serverless.base.yml` does not work.
